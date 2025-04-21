@@ -8,6 +8,7 @@
     --font-content: "poppins", sans-serif;
     --highlight-color: #DF6951;
     --txt-color: #181E4B;
+    --nav-txt-color: #212832;
     --subContent-color: #5E6282;
     --primaryBtnColor: #F1A501;
     --secondaryBtnColor: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
@@ -25,3 +26,189 @@ img, svg {
     max-width: 100%;
     height: auto;
 }
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-content);
+    background: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0 2rem;
+}
+
+/* Styling nav and hero section */
+
+header {
+    padding: 2rem 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: var(--nav-txt-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.header-nav ul .framelessBtn {
+    background: none;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+
+}
+
+.header-nav ul .lang {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.hero {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .left {
+   width: 50%;
+}
+
+.hero .left .tagline {
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.hero .left .headingTxtWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .left .headingTxtWrapper .headingTxt {
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    color: var(--txt-color);
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: -0.21rem;
+}
+
+.hero .left .headingTxtWrapper img {
+    align-self: flex-end;
+    margin-top: -1.6rem;
+    margin-right: 2rem;
+}
+
+.hero .left .subContent {
+    color: var(--subContent-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    max-width: 29rem;
+}
+
+.hero .right {
+    width: 50%;
+    background-image: url('asset/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 47rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+
+.hero .right .bgShape {
+    position: absolute;
+    z-index: -1;
+    top: -4.6rem;
+    right: -17rem;
+}
+
+.hero .right .right-airplane {
+    margin-top: 5rem;
+    margin-right: -3rem;
+}
+
+.hero .groupBtns {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.hero .groupBtns .primaryBtn {
+    background: var(--primaryBtnColor);
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    border-radius: 0.625rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.hero .groupBtns .playDemoBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero .groupBtns .playDemoBtn .btnTxt {
+    color: #686D77;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Media query starts here */
+/* @media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .right {
+        width: 100%;
+        height: 47rem;
+        
+    }
+} */
+/* Media query ends here */
+
