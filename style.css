@@ -45,8 +45,7 @@ body {
     /* border: 1px solid #000; */
 }
 
-/* Styling nav and hero section */
-
+/* Styling nav and hero section starts here */
 header {
     padding: 2rem 0;
 }
@@ -152,7 +151,6 @@ header {
 }
 
 .hero .bgShape {
-    width: 100%;
     z-index: -1;
     position: absolute;
     top: 0;
@@ -190,6 +188,71 @@ header {
     font-weight: 500;
 }
 
+/* Styling nav and hero section ends here */
+
+/* Styling of service section starts here */
+.headingAndIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingAndIcon .content {
+    text-align: center;
+    flex: 2;
+}
+
+.service-section .rowWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+   flex-wrap: wrap;
+   margin-top: 4rem;
+}
+
+.service-section .rowWrapper .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    padding: 2rem 1.7rem;
+}
+
+.service-section .rowWrapper .card .headingTxt {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #1E1D4C;
+    font-weight: 500;
+}
+
+.service-section .rowWrapper .card .subContent {
+    text-align: center;
+    font-weight: 400;
+    color: var(--subContent-color);
+    max-width: 11rem;
+}
+
+.service-section .rowWrapper .shadowCard {
+    border-radius: 2.25rem;
+    background: #fff;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+    position: relative;
+}
+
+.service-section .rowWrapper .shadowCard .overlayCard {
+    border-radius: 1.875rem 0rem 0.625rem 0rem;
+    background: #DF6951;
+    padding: 3rem;
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    z-index: -1;
+}
+
+/* Styling of service section ends here */
+
 /* Media query starts here */
 @media (max-width: 768px) {
     .container {
@@ -206,26 +269,14 @@ header {
         text-align: center;
     }
 
-    /* .hero .airplane {
-        display: inline-block;
-        position: absolute;
-        top: 10%;
-        right: 30%;
-    }
-    
-    .hero .airplaneTwo {
-        display: inline-block;
-        position: absolute;
-        top: 20%;
-        right: 1%;
-    }
-    
+    .hero .airplane, 
+    .hero .airplaneTwo,
     .hero .bgShape {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
-    } */
+        display: none;
+    }
+    
+
+
 
     .header-nav {
         display: none;
