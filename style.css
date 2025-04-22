@@ -197,9 +197,21 @@ header {
     align-items: center;
 }
 
-.headingAndIcon .content {
+.service-section .content {
     text-align: center;
     flex: 2;
+}
+
+.service-section .content p {
+    color: #5E6282;
+    font-weight: 600;
+}
+
+.service-section .content h2 {
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: #14183E;
 }
 
 .service-section .rowWrapper {
@@ -252,6 +264,83 @@ header {
 }
 
 /* Styling of service section ends here */
+
+/* Styling of destination section starts here */
+
+.destination-section {
+    margin-top: 8rem;
+}
+
+.destination-section .content {
+    text-align: center;
+}
+.destination-section .content p {
+    color: #5E6282;
+    font-weight: 600;
+}
+
+.destination-section .content h2 {
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: #14183E;
+}
+
+.destination-section .rowWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.destination-section .rowWrapper .card  {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+    border-radius: 1.5rem;
+    padding: 2rem 0;
+    flex: 1;
+    max-width: 15rem;
+}
+
+.destination-section .rowWrapper .card img {
+    max-width: 15rem;
+    height: 15rem;
+}
+
+.destination-section .rowWrapper .card .rowInner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--subContent-color);
+    font-size: 0.9rem;
+}
+
+.destination-section .rowWrapper .card .rowInnerTwo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    color: var(--subContent-color);
+    font-size: 0.8rem;
+}
+
+.destination-section .rowWrapper .lastCard {
+    position: relative;
+}
+
+.destination-section .rowWrapper .bgShape {
+    position: absolute;
+    right: -15%;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+/* Styling of destination section ends here */
 
 /* Media query starts here */
 @media (max-width: 768px) {
