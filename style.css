@@ -93,7 +93,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid #000;
 }
 
 .hero .left {
@@ -135,7 +134,7 @@ header {
 
 .hero .right {
     flex: 1;
-    border: 1px solid #000;
+    position: relative;
 }
 
 .hero .airplane {
@@ -149,42 +148,15 @@ header {
     display: inline-block;
     position: absolute;
     top: 20%;
-    right: 0;
+    right: 1%;
 }
 
-.hero .right .right-airplane {
-    display: inline-block;
-    border: 1px solid #000;
-}
-
-.hero .right .bgShape {
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    
-}
-
-/* .hero .right::before {
-    content: "";
-    position: absolute;
+.hero .bgShape {
     width: 100%;
-    aspect-ratio: 1;
     z-index: -1;
-    top: -10%;
-    left: 15%;
-    background: url(asset/vector-shape.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
-} */
-
-.hero .right .right-airplane {
-  transform: translateY(6rem);
-
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .hero .groupBtns {
@@ -234,15 +206,30 @@ header {
         text-align: center;
     }
 
+    /* .hero .airplane {
+        display: inline-block;
+        position: absolute;
+        top: 10%;
+        right: 30%;
+    }
+    
+    .hero .airplaneTwo {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        right: 1%;
+    }
+    
+    .hero .bgShape {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    } */
+
     .header-nav {
         display: none;
     }
-
-    /* .hero .right {
-        width: 100%;
-        height: 47rem;
-        
-    } */
 }
 /* Media query ends here */
 
