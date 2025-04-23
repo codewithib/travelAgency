@@ -55,6 +55,14 @@ header {
     align-items: center;
 }
 
+.header-nav-mobile {
+    display: none;
+}
+
+.header-nav .logo .logoTablet {
+    display: none;
+}
+
 .header-nav ul {
     display: flex;
     gap: 4rem;
@@ -76,7 +84,6 @@ header {
     border: 1px solid #000;
     border-radius: 0.3rem;
     padding: 0.5rem 1rem;
-
 }
 
 .header-nav ul .lang {
@@ -85,12 +92,17 @@ header {
     gap: 0.4rem;
 }
 
+.header-nav ul .lang .caretTablet {
+    display: none;
+}
+
 .hero {
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 90vh;
 }
 
 .hero .left {
@@ -227,7 +239,6 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    flex: 1;
     padding: 2rem 1.7rem;
 }
 
@@ -300,14 +311,12 @@ header {
     box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
     border-radius: 1.5rem;
     padding: 2rem 0;
-    flex: 1;
-    max-width: 15rem;
 }
 
-.destination-section .rowWrapper .card img {
+/* .destination-section .rowWrapper .card img {
     max-width: 15rem;
     height: 15rem;
-}
+} */
 
 .destination-section .rowWrapper .card .rowInner {
     display: flex;
@@ -349,6 +358,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    flex-wrap: wrap;
 }
 
 .booking-section .rowWrapperBig .leftWrapper {
@@ -512,6 +522,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .testimonial-section .rowWrapper .left .headingTxt {
@@ -588,17 +599,32 @@ header {
 /* Inifinity scroll section starts here */
 .infinity-scroll-section {
     margin-top: 4.5rem;
+    
 }
+
+
 
 .infinity-scroll-section .rowWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1rem;
+    animation: infinity-scroll 6s infinite backwards;
+}
+
+@keyframes infinity-scroll {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(2rem);
+    }
 }
 
 .infinity-scroll-section .rowWrapper .imgCard {
-    flex: 1;
+   margin: 0 auto;
 }
 
 
@@ -611,6 +637,7 @@ header {
 
 .infinity-scroll-section .rowWrapper .imgCard img {
     max-width: 10rem;
+  
 }
 /* Inifinity scroll section ends here */
 
@@ -692,12 +719,14 @@ header {
 /* Footer section styling starts here */
 .footer-section {
     margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 .footer-section .rowWrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .footer-section .rowWrapper .left .logo {
@@ -711,13 +740,13 @@ header {
     color: var(--subContent-color);
     font-size: 0.8125rem;
     font-weight: 500;
-    max-width: 15rem;
 }
 
 .footer-section .rowWrapper .center {
     display: flex;
-    gap: 4.5rem;
+    gap: 2rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-section .rowWrapper .center .column ul .headingTxt {
@@ -743,6 +772,7 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .footer-section .rowWrapper .right .rowIcons .icon {
@@ -775,6 +805,7 @@ header {
     margin-top: 1rem;
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .footer-section .rowWrapper .right .rowBtns .btn {
@@ -784,6 +815,7 @@ header {
     background: #080809;
     border-radius: 3rem;
     padding: 0.6rem 1.3rem;
+    flex-wrap: wrap;
 }
 
 .footer-section .rowWrapper .right .rowBtns .btn .txtPlay .boldTxt {
@@ -830,9 +862,65 @@ header {
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .header-nav {
+        background: var(--txt-color);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        padding: 2rem 1rem;
+        z-index: 1000;
+    }
+
+    .header-nav .logo {
+        max-width: 5rem;
+    }
+
+    .header-nav .logo .logoTablet {
+        display: block;
+    }
+
+    .header-nav .logo .logoDesktop {
+        display: none;
+    }
+
+    .header-nav ul {
+        gap: 0.8rem;
+    }
+
+
+    .header-nav ul li a {
+        text-decoration: underline;
+        font-size: 0.93rem;
+        color: #fff;
+    }
+
+    .header-nav ul .framelessBtn {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.93rem;
+        color: #fff;
+        border-color: #fff;
+    }
+
+    .header-nav ul .lang {
+        font-size: 0.93rem;
+        color: #fff;
+    }
+
+    .header-nav ul .lang .caretDesktop {
+        display: none;
+    }
+
+    .header-nav ul .lang .caretTablet {
+        display: block;
     }
 
     .hero {
+        margin-top: 6rem;
         flex-direction: column;
         gap: 1rem;
     }
@@ -849,10 +937,25 @@ header {
     }
     
 
+    .hero .left .subContent {
+        margin: 0 auto;
+    }
 
+    .hero .groupBtns {
+        justify-content: center;
+    }
+
+    
+}
+
+@media (max-width: 475px) {
+    .container {
+        max-width: 475px;
+        width: 90%;
+        padding: 0 1.2rem
+    }
 
     .header-nav {
-        display: none;
-    }
+    display: none;
 }
 /* Media query ends here */
