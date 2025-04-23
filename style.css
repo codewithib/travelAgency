@@ -41,8 +41,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     width: 95%;
-    padding: 0 0rem;
-    /* border: 1px solid #000; */
+    padding: 0 1rem;
 }
 
 /* Styling nav and hero section starts here */
@@ -502,6 +501,330 @@ header {
     border-radius: 0.7rem;
 }
 /* Booking section styling ends here */
+
+/* Testimonial section styling starts here */
+.testimonial-section {
+    margin-top: 6rem;
+}
+
+.testimonial-section .rowWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.testimonial-section .rowWrapper .left .headingTxt {
+    color: var(--subContent-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.testimonial-section .rowWrapper .left .subContent {
+    color: #14183E;
+    font-size: 3.125rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+}
+
+.testimonial-section .rowWrapper .left .rowCircleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.testimonial-section .rowWrapper .left .rowCircleWrapper .circle {
+    background: #F5F5F5;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.testimonial-section .rowWrapper .center {
+    max-width: 31.5rem;
+    
+    
+}
+
+.testimonial-section .rowWrapper .center .card {
+    background: #FFF;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+    padding: 1rem;
+    position: relative;
+}
+
+.testimonial-section .rowWrapper .center .card .content {
+    columns: #5E6282;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.testimonial-section .rowWrapper .center .card .contentName {
+    columns: #5E6282;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.testimonial-section .rowWrapper .center .card .contentCountry {
+    columns: #5E6282;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 0.4rem;
+}
+
+.testimonial-section .rowWrapper .right .caretsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+/* .testimonial-section .rowWrapper .right {
+    flex: 1;
+} */
+/* Testimonial section styling ends here */
+
+/* Inifinity scroll section starts here */
+.infinity-scroll-section {
+    margin-top: 4.5rem;
+}
+
+.infinity-scroll-section .rowWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.infinity-scroll-section .rowWrapper .imgCard {
+    flex: 1;
+}
+
+
+.infinity-scroll-section .rowWrapper .shadowImg {
+    background: #FFF;
+    box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+    padding: 1rem;
+    
+}
+
+.infinity-scroll-section .rowWrapper .imgCard img {
+    max-width: 10rem;
+}
+/* Inifinity scroll section ends here */
+
+/* Newsletter section styling starts here */
+.newsletter-section {
+    margin-top: 6rem;
+}
+
+.newsletter-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    line-height: 3.375rem;
+    color: #5E6282;
+    padding: 0 5rem;
+    background: rgba(223, 215, 249, 0.2);
+    border-radius: 8.0625rem 1.25rem 1.25rem 1.25rem;
+    position: relative;
+ 
+    
+
+}
+
+.newsletter-section .wrapper .edgeImg {
+    position: absolute;
+    right: -2%;
+    top: -3%;
+}
+
+.newsletter-section .wrapper .headingTxt {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.newsletter-section .wrapper .inputAndBtnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.newsletter-section .wrapper .inputAndBtnWrapper .iconAndInputWrapper {
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.625rem;
+}
+
+.newsletter-section .wrapper .inputAndBtnWrapper .iconAndInputWrapper input {
+    border: none;
+    outline: none;
+    padding: 0.35rem;
+}
+
+.newsletter-section .wrapper .inputAndBtnWrapper .primaryBtn {
+    background: var(--secondaryBtnColor);
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    border-radius: 0.625rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.newsletter-section .wrapper .starIcons {
+    position: absolute;
+    bottom: 0;
+    right: -2%;
+}
+/* Newsletter section styling ends here */
+
+/* Footer section styling starts here */
+.footer-section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.footer-section .rowWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section .rowWrapper .left .logo {
+    font-size: 2.75rem;
+    color: var(--txt-color);
+    font-weight: 400;
+    letter-spacing: -0.2rem;
+}
+
+.footer-section .rowWrapper .left .content {
+    color: var(--subContent-color);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    max-width: 15rem;
+}
+
+.footer-section .rowWrapper .center {
+    display: flex;
+    gap: 4.5rem;
+    align-items: center;
+}
+
+.footer-section .rowWrapper .center .column ul .headingTxt {
+    margin-bottom: 1rem;
+}
+
+.footer-section .rowWrapper .center .column ul {
+    list-style: none;
+}
+
+.footer-section .rowWrapper .center .column ul li {
+    margin-bottom: 0.2rem;
+}
+
+.footer-section .rowWrapper .center .column ul li a {
+    text-decoration: none;
+    color: var(--subContent-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.footer-section .rowWrapper .right .rowIcons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-section .rowWrapper .right .rowIcons .icon {
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.9rem;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10));
+    background: linear-gradient();
+}
+.footer-section .rowWrapper .right .rowIcons .igLogo {
+    background: conic-gradient(
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5,
+        #feda75
+      );
+}
+
+.footer-section .rowWrapper .right .headingTxt {
+    margin-top: 1.5rem;
+    color: var(--subContent-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.00625rem;
+} 
+
+.footer-section .rowWrapper .right .rowBtns {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-section .rowWrapper .right .rowBtns .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #080809;
+    border-radius: 3rem;
+    padding: 0.6rem 1.3rem;
+}
+
+.footer-section .rowWrapper .right .rowBtns .btn .txtPlay .boldTxt {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+
+.footer-section .rowWrapper .right .rowBtns .btn .txtPlay .subContent {
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: -0.24rem;
+    letter-spacing: -0.02rem;
+}
+
+.footer-section .rowWrapper .right .rowBtns .btn .txtApple .boldTxt {
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+
+.footer-section .rowWrapper .right .rowBtns .btn .txtApple .strgBoldTxt {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: -0.02rem;
+}
+
+.footer-section .footerTxt {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--subContent-color);
+}
+
+
+/* Footer section styling ends here */
 
 /* Media query starts here */
 @media (max-width: 768px) {
